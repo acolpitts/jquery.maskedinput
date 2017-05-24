@@ -272,6 +272,11 @@ $.fn.extend({
 					e.preventDefault();
 				}
 			}
+			
+			function specialKeys(k) {
+				var spKeys = [35, 36, 37, 39]; // Home, End, Left, Right
+				return spKeys.indexOf(k) >= 0;
+			}
 
 			function keypressEvent(e) {
                 if (input.prop("readonly")){
