@@ -303,7 +303,6 @@ $.fn.extend({
 							next = seekNext(p);
 
 							if(android){
-								next = seekNext(p+1);
 								//Path for CSP Violation on FireFox OS 1.1
 								var proxy = function() {
 									$.proxy($.fn.caret,input,next)();
